@@ -1,0 +1,16 @@
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.DAL.dll.config
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.DAL.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.DAL.pdb
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\EntityFramework.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.MAP.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.MODEL.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.MAP.pdb
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.MAP.dll.config
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\Project.MODEL.pdb
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\EntityFramework.xml
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\obj\Debug\Project.DAL.csprojAssemblyReference.cache
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\obj\Debug\Project.DAL.csproj.CopyComplete
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\obj\Debug\Project.DAL.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.DAL\obj\Debug\Project.DAL.pdb
