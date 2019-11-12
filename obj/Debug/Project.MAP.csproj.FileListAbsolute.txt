@@ -1,0 +1,13 @@
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\Project.MAP.dll.config
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\Project.MAP.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\Project.MAP.pdb
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\EntityFramework.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\EntityFramework.SqlServer.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\Project.MODEL.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\Project.MODEL.pdb
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\EntityFramework.xml
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\bin\Debug\EntityFramework.SqlServer.xml
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\obj\Debug\Project.MAP.csprojAssemblyReference.cache
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\obj\Debug\Project.MAP.csproj.CopyComplete
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\obj\Debug\Project.MAP.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MAP\obj\Debug\Project.MAP.pdb
