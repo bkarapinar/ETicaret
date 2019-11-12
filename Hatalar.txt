@@ -1,6 +1,0 @@
-﻿Admin Area daki AddProduct ve UpdateProduct taki validationlar çalışmıyor. 
-
-View yönlendirmelerimden kaynaklı.Henüz çözemeedim.
-Member kısmında, direkt sepete tıklarsam index sayfasında kullanıcı girişi yaptırıyor ancak mesaj vermiyor.(üye olun ya da giriş yapın şeklinde). Devamında Login işlemi gerçekleştirip tekrar Sepet ı tıklarsam Sepetinizde ürün yoktur uyarısı alıyorum. Ancak bu sefer aynı zamanda üye olun mesajı da geliyor. 
-
-myInit sınıfımda oluşturduğum yöntemlerden user-userDetail kısmı çalışmıyor- henüz çözemedim.
