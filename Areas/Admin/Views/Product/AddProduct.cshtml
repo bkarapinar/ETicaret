@@ -1,0 +1,95 @@
+﻿@model Tuple<List<Category>, Product>
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<head>
+    <style>
+        .field-validation-error {
+            color: red;
+        }
+    </style>
+    <link href="~/OuterTools/ImageUpload/ImageUpload.css" rel="stylesheet" />
+    <script src="~/OuterTools/ImageUpload/ImageUploadJavaScript.js"></script>
+</head>
+
+<body>
+    <div class=" form">
+
+
+        @using (Html.BeginForm("AddProduct", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+        {
+            <div class="container">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="">Tablo İsmi</span>
+                    </div>
+                    <div style="width:350px">
+                        @Html.TextBoxFor(x => x.Item2.ProductName, new { @class = "form-control" })
+                        
+                    </div>
+                    <div style=" width:350px; color:red">
+                        @Html.ValidationMessageFor(x => x.Item2.ProductName)
+                    </div>
+
+                </div>
+               @* <div>@Html.ValidationMessageFor(x => x.Item2.ProductName)</div>*@
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Kategorisi</span>
+                    </div>
+                    <div style="width:350px">
+                        @Html.DropDownListFor(x => x.Item2.CategoryID, new SelectList(Model.Item1, "ID", "CategoryName"), "Lütfen Seçiniz", new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Detaylar</span>
+                    </div>
+                    <div style="width:350px">
+                        @Html.TextBoxFor(x => x.Item2.Description, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Fiyatı &#x20BA;</span>
+                    </div>
+                    <div style="width:350px">
+                         @Html.TextBoxFor(x => x.Item2.UnitPrice, new { @class = "form-control", type = "decimal" })
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Ebatları</span>
+                    </div>
+                    <div style="width:350px">
+                        @Html.TextBoxFor(x => x.Item2.ProductSize, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div>@Html.ValidationMessageFor(x => x.Item2.ProductSize)</div>
+
+                <div>
+                    <div class="col-md col-md-6">
+                        <input name="resim" type='file' onchange="readURL(this);" />
+                    </div>
+                    <div class=" col-md col-md-6">
+                        <img id="blah" src="http://placehold.it/180" alt="your image" />
+                    </div>
+
+                </div>
+
+                <button class="btn btn-success" type="submit">Kaydet</button>
+
+                @Html.ActionLink("Vazgeç", "ProductList", null, new { @class = "btn btn-default" })
+
+            </div>
+        }
+
+
+    </div>
+</body>

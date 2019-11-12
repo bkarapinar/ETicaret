@@ -1,0 +1,51 @@
+﻿@model List<Category>
+@{
+    ViewBag.Title = "CategoryList";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@*<script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>*@
+
+<body>
+
+    <div class="container">
+        <div class=" badge-info">
+            <h5 class="alert-heading" style="margin-left:350px">Kategori Yönetim Sayfası</h5>
+
+        </div>
+        <div >@Html.ActionLink("Yeni Kategori","AddCategory","Category",new { Area="Admin"},new { @class="btn btn-outline-warning"}) </div>
+     
+
+        <br />
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Kategori ID</th>
+                    <th>Kategori Adı</th>
+                    <th>Güncelle</th>
+                    <th>Sil</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Category item in Model)
+                {
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.CategoryName</td>
+                        <td>@Html.ActionLink("Güncelle", "UpdateCategory", new { id = item.ID }, new { @class = "btn btn-outline-info" })</td>
+                        <td>@Html.ActionLink("Sil", "DeleteCategory", new { id = item.ID }, new { @class = "btn btn-outline-danger" })</td>
+
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+

@@ -1,0 +1,78 @@
+﻿@model List<Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+
+        <div id="fh5co-work">
+            <div class="container">
+                <div class="row">
+                    @foreach (Product item in Model)
+                    {
+                        <div class="col-md-4 text-center animate-box">
+
+                            <a class="work" href="@Url.Action("ProductDetail","Member",new { @id=item.ID})">
+
+                                <div class="work-grid" style=" background-image: url('@item.ImagePath');">
+
+                                    <div class="inner">
+                                        <div class="desc">
+
+                                            @* <img src="@item.ImagePath" width="300" height="300" /> style ı bozduğu için devredışı*@
+
+                                            <h3>@item.ProductName</h3>
+                                            <span class="cat">@item.ProductSize</span>
+                                            <span class="cat">@item.Description</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+
+        <div id="fh5co-author" class="fh5co-bg-section">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>Hakkımda</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="author">
+                            <div class="author-inner animate-box" style=" background-image: url('../../Pictures/Emel.jpeg');">
+                            </div>
+                            <div class="desc animate-box">
+                                <span>RESSAM</span>
+                                <h3>Emel CEBECİOĞLU</h3>
+                                <p>1980, İstanbul Doğumluyum.</p>
+                                <p>Güzel Sanatlar okuluna gittim.</p>
+                                <p>Sanatçı Erkmen Senan' dan Temel Sanat Eğitimi ve Resim Dersleri aldım.</p>
+                                <p>Soyut Kompozisyon ve Şekilsel Renk üzerine eserler üretiyorum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

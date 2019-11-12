@@ -1,0 +1,50 @@
+﻿@model Tuple<Cart, Order>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    decimal? toplamTutar = 0;
+}
+<div style="padding-top:100px">
+    <h4>Siparişi Verilecek Ürünler</h4>
+    <table class="table table-hover" style="margin-left:10px">
+        <tr style="margin-left:10px">
+            <th style="margin-left:10px">Eser Adı</th>
+            <th style="margin-left:10px">Fiyatı</th>
+            <th style="margin-left:10px">Resmi</th>
+
+        </tr>
+
+        @foreach (CartItem item in Model.Item1.Sepetim)
+        {
+            toplamTutar += item.SubTotal;
+
+            <tr style="margin-right:500px">
+                <td style="margin-right:250px">@item.Name</td>
+                <td style="margin-right:250px">@item.Price</td>
+                <td style="margin-right:250px">
+                    <a href="@item.ImagePath" style="margin-right:250px">
+                        <img src="@item.ImagePath" class="img-responsive" style="width:100px;height:100px; margin-right:250px;" />
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <div class="jumbotron" style="padding-left:10px">TOPLAM TUTAR =>>  @toplamTutar</div>
+    @*<div>
+            @Html.BeginForm("SiparisVer", "Member", FormMethod.Post)
+        </div>*@
+    <div style="padding-left:10px">Teslim Adresi</div>
+    <div style="padding-left:10px">@Html.TextAreaFor(x => x.Item2.ShippedAddress)</div>
+
+</div>
+
+<div>
+    <button style="margin-left:20px" class="btn btn-outline-warning">Sipariş Ver </button>
+</div>
+

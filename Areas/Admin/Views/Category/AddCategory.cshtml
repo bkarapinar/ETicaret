@@ -1,0 +1,39 @@
+﻿@model Category
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<head>
+    <style>
+        .field-validation-error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    @using (Html.BeginForm("AddCategory", "Category", FormMethod.Post))
+
+    {
+        <div class="container">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Kategori İsmi</span>
+                </div>
+                <div style="width:350px">
+                    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+                            </div>
+
+            </div>
+            <div>
+                @Html.ValidationMessageFor(x => x.CategoryName)
+
+            </div>
+            <button class="btn btn-success">Ekle</button>
+
+            @Html.ActionLink("Vazgeç", "CategoryList", null, new { @class = "btn btn-default" })
+
+        </div>
+    }
+</body>

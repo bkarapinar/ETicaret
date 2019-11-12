@@ -1,0 +1,41 @@
+﻿@model Category
+
+@{
+    ViewBag.Title = "UpdateCategory";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<head>
+    <style>
+        .field-validation-error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    @using (Html.BeginForm("UpdateCategory", "Category", FormMethod.Post))
+
+    {
+        @Html.HiddenFor(x=>x.ID)
+
+        <div class="container">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Kategori İsmi Güncelle</span>
+                </div>
+                @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+
+            </div>
+            <div>
+                @Html.ValidationMessageFor(x => x.CategoryName)
+
+            </div>
+            <button class="btn btn-success">Güncelle</button>
+
+            @Html.ActionLink("Vazgeç", "CategoryList", null, new { @class = "btn btn-default" })
+
+        </div>
+    }
+</body>

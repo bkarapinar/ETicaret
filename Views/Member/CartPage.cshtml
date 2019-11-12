@@ -1,0 +1,70 @@
+﻿@model Cart
+
+@{
+    ViewBag.Title = "CartPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CartPage</h2>
+<center>
+    @if (TempData["uyeDegil"] != null)
+    {
+    <h4 class="alert alert-warning">@TempData["uyeDegil"] </h4>
+
+    }
+
+</center>
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    @if (TempData["message"] != null)
+    {
+        @*<h2 style="color:lightcoral">@TempData["message"] </h2>*@
+        <h4 class="alert alert-warning">@TempData["message"] </h4>
+
+    }
+    else
+    {
+        <div class="fh5co-loader"></div>
+        <div id="page">
+            <div id="fh5co-author">
+                <div class="container">
+                    @foreach (CartItem item in Model.Sepetim)
+                    {
+                        <div class="row top-line animate-box">
+                            <div class="col-md-6">
+
+                                <img src="@item.ImagePath" class="img-responsive" style="width:500px;height:350px; margin:auto;" />
+                            </div>
+                            <div class="col-md-4">
+                                <br /><br /><br /><br />
+                                <h3 style="color:darkgray;text-align:center;margin-left:2px">@item.Name (1 Adet)</h3>
+                                <h3 style="color:darkgray;text-align:center;margin-left:2px">Fiyatı: @item.SubTotal.ToString("C2")</h3>
+
+                            </div>
+                            @Html.ActionLink("Sepetten Çıkart", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
+
+                        </div>
+                    }
+                </div>
+                <center>
+                    <h2 class="alert-warning">TOPLAM TUTAR </h2>
+                    <h2 style="color:lightsalmon"> @Convert.ToDecimal(Model.TotalPrice).ToString("C2")</h2> @Html.ActionLink("Sipariş Ver", "SiparisVer", null, new { @class = "btn btn-primary" })
+                </center>
+                
+            </div>
+        </div>
+
+    }
+   
+
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+
+</body>
+</html>
