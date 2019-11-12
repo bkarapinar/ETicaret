@@ -1,0 +1,5 @@
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.COMMON\bin\Debug\Project.COMMON.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.COMMON\bin\Debug\Project.COMMON.pdb
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.COMMON\obj\Debug\Project.COMMON.csprojAssemblyReference.cache
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.COMMON\obj\Debug\Project.COMMON.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.COMMON\obj\Debug\Project.COMMON.pdb
