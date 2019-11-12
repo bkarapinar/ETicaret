@@ -1,0 +1,5 @@
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MODEL\bin\Debug\Project.MODEL.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MODEL\bin\Debug\Project.MODEL.pdb
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MODEL\obj\Debug\Project.MODEL.csprojAssemblyReference.cache
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MODEL\obj\Debug\Project.MODEL.dll
+D:\BilgeAdam\ProjeBirsenK\ProjectArtist\Project.MODEL\obj\Debug\Project.MODEL.pdb
