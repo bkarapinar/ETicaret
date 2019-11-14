@@ -3,13 +3,4 @@
 Admin User  =>>   Kullanıcı Adı: admin      Şifre: 123456789
 Member User =>>   Kullanıcı Adı: birsen     Şifre: 123456789
 
-2) veri tabanı otomatik oluşturmada user-userDetail da problem yaşadığım için User eklenmesi gerekmekte. Yedek veri tabanı da proje klasöründe mevcut.
-
-3) proje index sayfası ile açılıyor ve ürünler listeleniyor. Misafir kullanıcı resimlerin detaylarına bakabilir. Sepete at dediği takdirde üyelik gerektiriyor. 
-
-4) Admin areasında ürün ve kategori için CRUD işlemleri eklendi. Diğer işlemler henüz tamamlanmadı. 
-
-5) Angular ve Api katmanında henüz işlem yapıladı.
-
-6) Proje tamamen bitmeden teslim edilmiştir. Gerçek hayatta kullanılması için devam eilecek.
-
+2) proje index sayfası ile açılıyor ve ürünler listeleniyor. Misafir kullanıcı resimlerin detaylarına bakabilir. Sepete at dediği takdirde üyelik gerektiriyor. 
