@@ -1,2 +1,0 @@
-﻿Sipariş kısmını tamamla (ödeme vs)
-Admin areasına Shipper, Kullanıcıları listeleme/ yönetme eklensin
